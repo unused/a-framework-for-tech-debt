@@ -90,8 +90,8 @@ is very interesting as it emphasizes why we even care about it.
 ![](data/about_me.jpg){:relative_height="90" relative_margin_left="10"}
 
 {::comment}
-- Complete Stack Developer: Frontend, Backend, DevOps, Management
 - Two decades in professional development and several more years in academia.
+- Complete Stack Developer: Frontend, Backend, DevOps, Cli Tools, Management
 - The last two years at Meister, I joined in early 2023
 {:/comment}
 
@@ -179,16 +179,20 @@ Metrics/MethodLength:
 # Practical Example
 
 ```bash
-$ wc --help
-Usage: wc [OPTION]... [FILE]...
-# [...]
-Print newline, word, and byte counts for each FILE, # [...]
-
 $ wc -l .rubocop_todo.yml
 1145 .rubocop_todo.yml # 1145 lines in file
 ```
 
 {::comment}
+word count with argument `-l` newlines
+{:/comment}
+
+# Practical Example
+
+> ✅️ check RuboCop
+
+{::comment}
+now passes, ignores legacy violations
 {:/comment}
 
 # Practical Example
@@ -203,6 +207,7 @@ $ wc -l .rubocop_todo.yml
 > Four Steps Framework
 
 {::comment}
+over time, formed a framework that helps
 {:/comment}
 
 # A Framework for Tech. Debt
@@ -335,31 +340,6 @@ What we want, is burn down.
 
 # A Framework for Tech. Debt
 
-![](data/log-chart-wide.png){:relative_height="90"}
-
-{::comment}
-...additionally we can apply some log scale so any update is detected well.
-
-But that numbers don't tell a story at all. What we are actually interested
-in is the number of todos left and how to get rid of them.
-{:/comment}
-
-# A Framework for Tech. Debt
-
-> Simplicity is the Key
-
-![](data/dev-metrics-chart-wide.png){:relative_height="100"}
-
-{::comment}
-As long as we understand the chart, that no change is an improvement, and
-keep our it simple for everyone to understand, we are on the best way to
-get rid of our tech debt.
-
-But what then? What happens when we got it all resolved?
-{:/comment}
-
-# A Framework for Tech. Debt
-
 **1. Get the Numbers** ✅️
 
 **2. Visualize Numbers** ✅️
@@ -450,15 +430,6 @@ chart go down.
 {::comment}
 What if we introduce rules on how we work.
 {:/comment}
-
-# A Framework for Tech. Debt
-
-```sh
-# E.g. in CI, do not allow any new
-# Rubocop violations:
-$ echo '' > .rubocop_todo.yml
-$ rubocop <changed-files>
-```
 
 # A Framework for Tech. Debt
 
