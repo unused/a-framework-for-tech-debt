@@ -178,6 +178,14 @@ Metrics/MethodLength:
 
 # Practical Example
 
+> ✅️ check RuboCop
+
+{::comment}
+now passes, ignores legacy violations
+{:/comment}
+
+# Practical Example
+
 ```bash
 $ wc -l .rubocop_todo.yml
 1145 .rubocop_todo.yml # 1145 lines in file
@@ -185,14 +193,6 @@ $ wc -l .rubocop_todo.yml
 
 {::comment}
 word count with argument `-l` newlines
-{:/comment}
-
-# Practical Example
-
-> ✅️ check RuboCop
-
-{::comment}
-now passes, ignores legacy violations
 {:/comment}
 
 # Practical Example
